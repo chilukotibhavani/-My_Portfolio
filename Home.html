@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavani Chilukoti - Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+    <header>
+        <nav>
+            <ul>
+                
+                <li class="nav-item-2"><a href="#about">About</a></li>
+                <li class="nav-item-3"><a href="#skills">Skills</a></li>
+                <li class="nav-item-3"><a href="#experience">Experience</a></li>
+                <li class="nav-item-4"><a href="#projects">Projects</a></li>
+                <li class="nav-item-5"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <main>
+        <main>
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h1>Bhavani Chilukoti</h1>
+                    <h4><span class="highlight">Final year | Software Engineer Intern</span></h2>
+                    <p class="fade-in">As an aspiring software engineer 🎓, Passionate about harnessing <br>technology to create innovative solutions💡.</p>   
+                        <div class="header-icons">
+                            <a href="https://github.com/chilukotibhavani" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/bhavani-chilukoti-80124a293/" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://linktr.ee/bhavani_ch" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/Bhavani.png" alt="Bhavani Chilukoti">
+                </div>
+            </section>
+           
+            <section id="about" class="section">
+                <h1 class="fade-in">About Me</h1>                
+                <p class="fade-in">👋 Hello! I am currently pursuing my education at Chalapathi Institute of Technology .<br>          <br>As an aspiring software engineer with a passion for innovation , I'm on an exciting journey to shape the future of technology. Currently interning at Wise Work .I'm honing my skills in .NET ,Blazor, C# , MudBlazor,while also expanding my expertise in Web development ,Java , Python, Data structures .Driven by curiosity and a desire to push boundaries, I combine technical proficiency with creative problem-solving to develop impactful solutions. My goal is to leverage technology to address both current and future challenges, continuously learning and evolving in this dynamic field.</p>               
+            </section>
+
+            <section id="skills" class="section">
+                <h1 class="fade-in">Skills</h1>
+                <div class="skills-container">
+                    <div class="skill-box fade-in-skill" data-skill-order="1">
+                        <h3>Languages</h3>
+                        <ul>
+                            <li><i class="fab fa-java"></i> Java</li>
+                            <li><i class="fab fa-python"></i> Python</li>
+                            <li><i class="fas fa-code"></i> C#</li>
+                            <li><i class="fas fa-project-diagram"></i> DSA</li>
+                        </ul>
+                    </div>
+                    <div class="skill-box fade-in-skill" data-skill-order="2">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li><i class="fab fa-html5"></i> HTML</li>
+                            <li><i class="fab fa-css3-alt"></i> CSS</li>
+                            <li><i class="fab fa-js-square"></i> JavaScript</li>
+                            <li><i class="fas fa-fire"></i> MudBlazor</li>
+                        </ul>
+                    </div>
+                    <div class="skill-box fade-in-skill" data-skill-order="3">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li><i class="fab fa-microsoft"></i> ASP.NET</li>
+                            <li><i class="fas fa-database"></i> SQL</li>
+                            <li><i class="fas fa-leaf"></i> MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="skill-box fade-in-skill" data-skill-order="4">
+                        <h3>Tools</h3>
+                        <ul>
+                            <li><i class="fas fa-code-branch"></i> Visual Studio</li>
+                            <li><i class="fab fa-github"></i> GitHub</li>
+                            <li><i class="fas fa-code"></i> Visual Studio Code</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="experience" class="section">
+                <h1 class="fade-in">Experience</h1>
+                <div class="experience-item stagger-item">
+                    <h3>Software Engineer Intern At Wise Work | 🎓Final Year </h3>
+                    <p><em>June 2024 - Present </em></p>
+                    <h4>Hue Animates Slide – Hue Learn</h4>
+                    <ul>
+                        <li>Interactive UI Development: Implemented drag-and-drop functionality for keywords, enhancing user engagement and learning interactivity.</li>
+                        <li>User Satisfaction: Contributed to a 40% increase in overall user retention through improved slide interactivity and visual enhancements.</li>
+                        <li>SVG Integration: Designed and incorporated SVG icons to improve visual appeal and user experience, resulting in a 30% increase in positive user feedback.</li>                     
+                    </ul>
+                </div>    
+            </section>
+    
+            <section id="projects" class="section">
+                <h1 class="fade-in">Projects</h1>
+                <div class="project-buttons fade-in-stagger">
+                    <button class="project-button active" data-project="weather">Weather Prediction</button>
+                    <button class="project-button" data-project="netflix">Netflix Clone</button>
+                    <button class="project-button" data-project="sudoku">Sudoku Solver</button>
+                </div>
+    
+                    <div id="weatherProject" class="project-details active">
+                        <div class="project-content">
+                            <div class="project-image-container">
+                                <img src="images/Weather.png" alt="Weather Prediction Project" class="project-image">
+                            </div> 
+                            <div class="project-text">
+                                <h3>Weather Prediction</h3>
+                                <p><em>Jan 2024 - Feb 2024</em></p>
+                                <ul>
+                                    <li class="project-point">Dynamic Weather Application: Created a robust weather prediction website using Blazor and ASP.NET, providing real-time weather updates for over 1000 global locations.</li>
+                                    <li class="project-point">API Integration: Successfully integrated external weather APIs, achieving 98% accuracy in weather forecasts and reducing data retrieval time by 40%.</li>
+                                    <li class="project-point">Interactive User Experience: Implemented interactive UI components with Blazor, resulting in a 50% increase in user engagement and time spent on the website.</li>
+                                </ul>
+                                <a href="https://github.com/chilukotibhavani/Bharat_Intern/tree/main/WeatherWeb" target="_blank" class="github-button">View on GitHub</a>                    
+                            </div>
+                        </div>
+                    </div>
+                
+        
+                    <div id="netflixProject" class="project-details">
+                        <div class="project-content">
+                            <div class="project-image-container">
+                                <img src="images/Netflix.png" alt="Netflix Clone Project" class="project-image">
+                            </div>                      
+                            <div class="project-text">
+                                <h3>Netflix Clone</h3>
+                                <p><em>Jan 2024 - Feb 2024</em></p>
+                                <ul> 
+                                    <li class="project-point">User Interface Replication: Developed a responsive Netflix clone using HTML and CSS, accurately recreating 90% of the original Netflix UI elements and layout.<li>                             
+                                    <li class="project-point">Responsive Design Implementation: Engineered a fully responsive design, ensuring seamless viewing experience across devices and increasing mobile user engagement by 35%.</li>
+                                    <li class="project-point">Performance Optimization: Implemented efficient CSS techniques, reducing the page load time by 20% and improving overall user experience.</li>
+                                </ul>
+                                <a href="https://github.com/chilukotibhavani/Bharat_Intern/blob/main/index.html" target="_blank" class="github-button">View on GitHub</a>
+                            </div> 
+                        </div>
+                    </div>
+            
+                    <div id="sudokuProject" class="project-details">
+                        <div class="project-content">
+                            <div class="project-image-container">
+                                <img src="images/Sudoku.jpg" alt="Sudoku Solver Project" class="project-image">
+                            </div>  
+                            <div class="project-text">
+                                <h3>Sudoku Solver – Fun Friday Activity</h3>
+                                <p><em>July 2024 - Aug 2024</em></p>
+                                <ul>
+                                    <li class="project-point">Multiplayer Functionality: Implemented both individual and room-based gameplay using SignalR and RoomHub, enabling real-time multiplayer interactions.</li>
+                                    <li class="project-point">Real-time Communication: Utilized SignalR to create seamless, real-time updates for game state, scores, and player actions across all connected clients.</li>
+                                    <li class="project-point">Game Logic Implementation: Developed core Sudoku game mechanics, including a "New Game" generator and "Solution" revealer, enhancing user experience and gameplay options.</li>
+                                </ul>
+                                <a href="https://github.com/chilukotibhavani/Sudoku" target="_blank" class="github-button">View on GitHub</a>  
+                                <a href="https://landing-services-dev.azurewebsites.net/Home" target="_blank" class="lets-play-button">Let's Play</a>
+                            </div>
+                        </div>
+                    </div>
+                
+            </section>
+    
+            <section id="contact" class="section">
+                <h1 class="fade-in">Contact Me</h1>
+                <div class="content-wrapper stagger-item">
+                    <div class="contact-container">
+                        <div class="contact-info">
+                            <div class="social-icons">
+                                <a href="mailto:bhavanichilukoti43@gmail.com" class="icon-button" data-tooltip="bhavanichilukoti43@gmail.com">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/bhavani-chilukoti-80124a293/" target="_blank" class="icon-button"  data-tooltip="Bhavani Chilukoti">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/chilukotibhavani" target="_blank" class="icon-button" data-tooltip="chilukotibhavani">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://linktr.ee/bhavani_ch" target="_blank" class="icon-button" data-tooltip="bhavani_ch">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <form id="contactForm" class="contact-form">
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                            <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+
+        </main>
+    </main>
+    <footer>
+        <p>&copy; 2024 Bhavani Chilukoti. All rights reserved.</p>
+    </footer>
+    <script src="particles.js"></script>
+    <script src="scroll-animation.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</body>
+</html>
