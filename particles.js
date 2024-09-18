@@ -1,4 +1,3 @@
-// Particle animation
 const particleAnimation = (() => {
     const canvas = document.getElementById('particle-canvas');
     const ctx = canvas.getContext('2d');
@@ -95,7 +94,6 @@ const particleAnimation = (() => {
 })();
 
 
-// Scroll animations
 const scrollAnimations = (() => {
     const observerOptions = {
         root: null,
@@ -175,7 +173,6 @@ const scrollAnimations = (() => {
         });
     }
 
-    // Observer for skill boxes
     const skillBoxes = document.querySelectorAll('.skill-box');
     const skillBoxObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -192,7 +189,6 @@ const scrollAnimations = (() => {
     });
 
 
-    // Observer for other individual elements
     const individualElements = document.querySelectorAll('.fade-in:not(.section), .stagger-item:not(.section)');
     const elementObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -218,7 +214,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// Project section interactivity
 const projectSection = (() => {
     function init() {
         const buttons = document.querySelectorAll('.project-button');
@@ -226,18 +221,16 @@ const projectSection = (() => {
 
         buttons.forEach(button => {
             button.addEventListener('click', function() {
-                // Remove active class from all buttons and project details
+              
                 buttons.forEach(btn => btn.classList.remove('active'));
                 projectDetails.forEach(detail => detail.classList.remove('active'));
 
-                // Add active class to clicked button and corresponding project detail
                 this.classList.add('active');
                 const projectId = this.getAttribute('data-project');
                 document.getElementById(projectId + 'Project').classList.add('active');
             });
         });
 
-        // Ensure the first project is displayed by default
         if (buttons.length > 0 && projectDetails.length > 0) {
             buttons[0].classList.add('active');
             projectDetails[0].classList.add('active');
@@ -249,7 +242,6 @@ const projectSection = (() => {
     };
 })();
 
-// Initialize everything when the DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     particleAnimation.init();
     particleAnimation.animate();
@@ -258,10 +250,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
-/*project points*/
-// Project points animation
-// Project points and GitHub button animation
 const projectAnimations = (() => {
     function animateProjectPoints(projectId) {
         const projectPoints = document.querySelectorAll(`#${projectId} .project-point`);
@@ -270,13 +258,12 @@ const projectAnimations = (() => {
         projectPoints.forEach((point, index) => {
             setTimeout(() => {
                 point.classList.add('visible');
-                // If this is the last point, animate the GitHub button
                 if (index === projectPoints.length - 1) {
                     setTimeout(() => {
                         if (githubButton) {
                             githubButton.classList.add('visible');
                         }
-                    }, 300); // Delay for GitHub button appearance
+                    }, 300); 
                 }
             }, 300 * (index + 1));
         });
@@ -305,7 +292,6 @@ const projectAnimations = (() => {
             });
         });
 
-        // Animate the first project's points and button by default
         const firstProjectId = document.querySelector('.project-details.active').id;
         animateProjectPoints(firstProjectId);
     }
@@ -315,27 +301,23 @@ const projectAnimations = (() => {
     };
 })();
 
-// Update the DOMContentLoaded event listener
 document.addEventListener('DOMContentLoaded', () => {
     particleAnimation.init();
     particleAnimation.animate();
     scrollAnimations.init();
     projectSection.init();
-    projectAnimations.init(); // Updated from projectPointsAnimation to projectAnimations
+    projectAnimations.init(); 
     initializeContactForm();
 });
 
 
-
-
-// Contact form initialization and submission handler
 function initializeContactForm() {
     emailjs.init("jqttxE0KAr7CrV_ra");
 
     const contactForm = document.getElementById('contactForm');
 
     contactForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
+        event.preventDefault(); 
 
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
